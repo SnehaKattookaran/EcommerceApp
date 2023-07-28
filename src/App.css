@@ -1,0 +1,129 @@
+.app-header {
+  height: 70px;
+  width: 96vw;
+  padding: 0 30px;
+  background-color: yellowgreen;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 1px 1px 10px rgba(206, 235, 127, 0.825);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logosection,
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+.logosection {
+  gap: 10px;
+}
+.appname {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #0c007d;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.searchbar input {
+  width: 250px;
+  height: 42px;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #ededed;
+  padding: 0 20px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+}
+.searchbtn {
+  width: 50px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 0 0 50px;
+  background-color: #ededed;
+  cursor: pointer;
+}
+.searchbtn img {
+  height: 35px;
+  width: 35px;
+  border-radius: 80px;
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+  background-color: #441307fa;
+}
+
+.main {
+  height: calc(100vh - 70px);
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 40px 30px 30px 30px;
+}
+.main::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+}
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+.main::-webkit-scrollbar-track {
+  background-color: #9e9e9eb2;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.box {
+  height: 280px;
+  width: 160px;
+  box-shadow: 3px 3px 10px rgba(0, 3, 8, 0.751);
+  border-radius: 5px;
+  padding: 40px;
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+  background-color: white;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+.box .text {
+  color: black;
+}
+.product-name {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.price {
+  font-size: 25px;
+  font-weight: 700;
+}
+.description {
+  font-size: 20px;
+  font-weight: 400;
+}
+.img {
+  width: 200px;
+  height: 200px;
+}
